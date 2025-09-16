@@ -30,7 +30,7 @@ const Navbar = () => {
   const leftLinks = [
     { href: "/", label: "Home" },
     { href: "/courses", label: "Courses" },
-    { href: "/features", label: "Features" },
+    { href: "/toolkit", label: "Toolkit" },
   ];
 
   const rightLinks = [
@@ -92,7 +92,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`tracking-wide text-lg px-3 py-1 rounded-full transition-colors duration-200 not-italic hover:not-italic ${
+                    className={`tracking-wide text-lg px-6 py-2 rounded-full transition-colors duration-200 not-italic hover:not-italic ${
                       pathname === link.href
                         ? "bg-red-700 text-white font-bold"
                         : "text-gray-300 hover:text-black hover:font-bold hover:bg-[#afe029]"
@@ -153,7 +153,7 @@ const Navbar = () => {
                     <Link
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className={`block text-lg px-3 py-2 rounded-2xl transition-colors w-1/3 mx-auto duration-200 not-italic hover:not-italic ${
+                      className={`block text-lg px-10 py-2 rounded-full transition-colors w-fit mx-auto duration-200 not-italic hover:not-italic ${
                         pathname === link.href
                           ? "bg-red-700 text-gray-200 font-bold"
                           : "text-gray-300 hover:text-purple-600"
