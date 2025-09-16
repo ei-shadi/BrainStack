@@ -21,7 +21,7 @@ const Navbar = () => {
   // Scroll listener to detect navbar background change
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); 
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -49,10 +49,10 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-white ">
+      <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full xl:max-w-screen-xl md:px-24 xl:px-8 text-white ">
         <div className="relative flex items-center justify-between">
           {/* Left Nav (desktop) */}
-          <ul className="hidden lg:flex items-center space-x-6 xl:space-x-10 flex-1 justify-start">
+          <ul className="hidden xl:flex items-center space-x-6 xl:space-x-10 flex-1 justify-start">
             {leftLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -70,7 +70,7 @@ const Navbar = () => {
           </ul>
 
           {/* Logo */}
-          <div className="flex-1 flex justify-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+          <div className="flex-1 flex justify-center xl:absolute xl:left-1/2 xl:transform xl:-translate-x-1/2">
             <Link href="/" className="inline-flex items-center">
               <Image src={Logo} alt="Logo" width={40} />
               <h5 className="ml-2 text-xl md:text-2xl font-bold tracking-wide text-white">
@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
 
           {/* Right Nav (desktop) */}
-          <ul className="hidden lg:flex items-center space-x-6 xl:space-x-10 flex-1 justify-end">
+          <ul className="hidden xl:flex items-center space-x-6 xl:space-x-10 flex-1 justify-end">
             {rightLinks.map((link) => (
               <li key={link.href}>
                 {link.label === "Sign in" ? (
@@ -106,7 +106,7 @@ const Navbar = () => {
           </ul>
 
           {/* Hamburger (mobile) */}
-          <div className="lg:hidden flex flex-1 justify-end">
+          <div className="xl:hidden flex flex-1 justify-end">
             <button
               aria-label="Open Menu"
               onClick={() => setIsMenuOpen(true)}
