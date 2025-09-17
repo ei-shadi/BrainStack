@@ -19,11 +19,11 @@ const Hero = () => {
           className="absolute inset-0 z-0" />
 
         {/* Other Content */}
-        <div className="absolute z-10 top-[5%] md:top-[5%] left-1/2 -translate-x-1/2">
+        <div className="absolute z-10 top-[5%] md:top-[18%] left-1/2 -translate-x-1/2">
           {/* Headline and Description */}
-          <div className="mb-12">
+          <div>
             {/* Badge */}
-            <div className="flex md:items-center text-center gap-2 bg-[#192420] px-4 py-2 rounded-full border-[2px] border-[#afe029] w-[300px] md:w-fit mx-auto mb-6">
+            <div className="flex md:items-center text-center gap-2 bg-[#192420] px-4 py-2 rounded-full border-[2px] border-[#afe029] w-[300px] md:w-fit mx-auto mb-6 absolute top-[-28%] left-1/2 -translate-x-1/2">
 
               <PiBookOpenUserFill width={50} className="text-[#afe029]"/>
               <p className="text-[#B2B2B2] text-xs md:text-sm">
